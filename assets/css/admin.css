@@ -1,0 +1,65 @@
+/**
+ * Admin CSS for Auto Post Thumbnail Plus
+ */
+
+/* Settings container */
+.aptp-settings-container {
+    max-width: 600px;
+}
+
+/* Section heading */
+#aptp-settings {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/* Main enable checkbox */
+#aptp_enabled + label {
+    font-weight: 600;
+}
+
+/* Mode settings area */
+#aptp-mode-settings {
+    transition: opacity 0.3s ease;
+}
+
+/* Default image container */
+#aptp-default-image-container {
+    margin-top: 10px;
+}
+
+#aptp-default-image-preview {
+    border-radius: 3px;
+}
+
+/* Buttons */
+#aptp_select_image_button,
+#aptp_remove_image_button {
+    margin-right: 5px;
+}
+
+/* Advanced options details/summary */
+details summary {
+    outline: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    content: '▶ ';
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* Bulk apply status */
+#aptp_bulk_apply_status {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
