@@ -2,7 +2,7 @@
 Contributors: bitwisesoftware
 Tags: featured image, auto thumbnail, first image, default image, post thumbnail
 Requires at least: 5.0
-Tested up to: 6.4
+Tested up to: 6.8
 Requires PHP: 7.2
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -197,7 +197,7 @@ Not yet! This plugin is completely free. We may add premium features in the futu
 * Bulk apply for existing posts
 * Skip pages option
 * Debug logging
-* WordPress 6.4 compatibility
+* WordPress 6.8 compatibility
 * PHP 7.2+ support
 
 == Upgrade Notice ==

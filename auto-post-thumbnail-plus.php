@@ -77,7 +77,7 @@ class Auto_Post_Thumbnail_Plus {
      * Add settings link on plugins page
      */
     public function add_settings_link($links) {
-        $settings_link = '<a href="' . admin_url('options-media.php#aptp-settings') . '">' . __('Settings', 'auto-post-thumbnail-plus') . '</a>';
+        $settings_link = '<a href="' . esc_url(admin_url('options-media.php#aptp-settings')) . '">' . esc_html__('Settings', 'auto-post-thumbnail-plus') . '</a>';
         array_unshift($links, $settings_link);
         return $links;
     }
@@ -114,7 +114,7 @@ class Auto_Post_Thumbnail_Plus {
         // Add settings section
         add_settings_section(
             'aptp_section',
-            __('Auto Featured Image Settings', 'auto-post-thumbnail-plus'),
+            esc_html__('Auto Featured Image Settings', 'auto-post-thumbnail-plus'),
             array($this, 'render_section_description'),
             'media'
         );
@@ -150,7 +150,7 @@ class Auto_Post_Thumbnail_Plus {
      * Render section description
      */
     public function render_section_description() {
-        echo '<p id="aptp-settings" style="margin-top: 0;">' . __('Automatically set featured images for posts that don\'t have one.', 'auto-post-thumbnail-plus') . '</p>';
+        echo '<p id="aptp-settings" style="margin-top: 0;">' . esc_html__('Automatically set featured images for posts that don\'t have one.', 'auto-post-thumbnail-plus') . '</p>';
     }
     
     /**
@@ -178,32 +178,32 @@ class Auto_Post_Thumbnail_Plus {
             <p style="margin-top: 0;">
                 <label for="aptp_enabled" style="font-weight: 600;">
                     <input type="checkbox" name="aptp_settings[enabled]" id="aptp_enabled" value="1" <?php echo $enabled; ?>>
-                    <?php _e('Enable auto-featured-image', 'auto-post-thumbnail-plus'); ?>
+                    <?php esc_html_e('Enable auto-featured-image', 'auto-post-thumbnail-plus'); ?>
                 </label>
             </p>
             
             <div id="aptp-mode-settings" style="margin-left: 25px; <?php echo $enabled ? '' : 'opacity: 0.5; pointer-events: none;'; ?>">
                 <!-- Mode selection -->
                 <p style="margin-bottom: 5px; font-weight: 600;">
-                    <?php _e('Mode:', 'auto-post-thumbnail-plus'); ?>
+                    <?php esc_html_e('Mode:', 'auto-post-thumbnail-plus'); ?>
                 </p>
                 <p style="margin: 5px 0;">
                     <label>
                         <input type="radio" name="aptp_settings[mode]" value="first_image" <?php checked($mode, 'first_image'); ?>>
-                        <?php _e('Use first image from post content', 'auto-post-thumbnail-plus'); ?>
+                        <?php esc_html_e('Use first image from post content', 'auto-post-thumbnail-plus'); ?>
                     </label>
                 </p>
                 <p style="margin: 5px 0 15px 0;">
                     <label>
                         <input type="radio" name="aptp_settings[mode]" value="default_image" <?php checked($mode, 'default_image'); ?>>
-                        <?php _e('Use default image', 'auto-post-thumbnail-plus'); ?>
+                        <?php esc_html_e('Use default image', 'auto-post-thumbnail-plus'); ?>
                     </label>
                 </p>
                 
                 <!-- Default image selector -->
                 <div id="aptp-default-image-section" style="<?php echo ($mode === 'default_image') ? '' : 'display: none;'; ?>">
                     <p style="margin-bottom: 5px; font-weight: 600;">
-                        <?php _e('Default image:', 'auto-post-thumbnail-plus'); ?>
+                        <?php esc_html_e('Default image:', 'auto-post-thumbnail-plus'); ?>
                     </p>
                     <div id="aptp-default-image-container">
                         <?php if ($image_url): ?>
@@ -219,11 +219,11 @@ class Auto_Post_Thumbnail_Plus {
                         <input type="hidden" name="aptp_settings[default_image_id]" id="aptp_default_image_id" value="<?php echo esc_attr($image_id); ?>">
                         
                         <button type="button" class="button" id="aptp_select_image_button">
-                            <?php _e('Select Image', 'auto-post-thumbnail-plus'); ?>
+                            <?php esc_html_e('Select Image', 'auto-post-thumbnail-plus'); ?>
                         </button>
                         
                         <button type="button" class="button" id="aptp_remove_image_button" style="<?php echo $image_id ? '' : 'display: none;'; ?>">
-                            <?php _e('Remove Image', 'auto-post-thumbnail-plus'); ?>
+                            <?php esc_html_e('Remove Image', 'auto-post-thumbnail-plus'); ?>
                         </button>
                     </div>
                 </div>
@@ -231,39 +231,39 @@ class Auto_Post_Thumbnail_Plus {
                 <!-- Advanced options (collapsible) -->
                 <details style="margin-top: 20px; padding: 10px; background: #f9f9f9; border: 1px solid #ddd; border-radius: 3px;">
                     <summary style="cursor: pointer; font-weight: 600; user-select: none;">
-                        <?php _e('Advanced Options', 'auto-post-thumbnail-plus'); ?>
+                        <?php esc_html_e('Advanced Options', 'auto-post-thumbnail-plus'); ?>
                     </summary>
                     <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #ddd;">
                         <p>
                             <label for="aptp_skip_pages">
                                 <input type="checkbox" name="aptp_settings[skip_pages]" id="aptp_skip_pages" value="1" <?php echo $skip_pages_checked; ?>>
-                                <?php _e('Skip pages (only apply to blog posts)', 'auto-post-thumbnail-plus'); ?>
+                                <?php esc_html_e('Skip pages (only apply to blog posts)', 'auto-post-thumbnail-plus'); ?>
                             </label>
                         </p>
                         <p>
                             <label for="aptp_debug_mode">
                                 <input type="checkbox" name="aptp_settings[debug_mode]" id="aptp_debug_mode" value="1" <?php echo $debug_mode_checked; ?>>
-                                <?php _e('Enable debug logging', 'auto-post-thumbnail-plus'); ?>
+                                <?php esc_html_e('Enable debug logging', 'auto-post-thumbnail-plus'); ?>
                             </label>
                             <br>
                             <span class="description" style="margin-left: 24px;">
-                                <?php _e('Logs will be written to debug.log when WP_DEBUG is enabled.', 'auto-post-thumbnail-plus'); ?>
+                                <?php esc_html_e('Logs will be written to debug.log when WP_DEBUG is enabled.', 'auto-post-thumbnail-plus'); ?>
                             </span>
                         </p>
                         
                         <!-- Bulk apply -->
                         <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
                         <p style="margin-bottom: 5px;">
-                            <strong><?php _e('Bulk Apply:', 'auto-post-thumbnail-plus'); ?></strong>
+                            <strong><?php esc_html_e('Bulk Apply:', 'auto-post-thumbnail-plus'); ?></strong>
                         </p>
                         <p>
                             <button type="button" class="button button-secondary" id="aptp_bulk_apply_button">
-                                <?php _e('Apply to Existing Posts Without Featured Image', 'auto-post-thumbnail-plus'); ?>
+                                <?php esc_html_e('Apply to Existing Posts Without Featured Image', 'auto-post-thumbnail-plus'); ?>
                             </button>
                             <span id="aptp_bulk_apply_status"></span>
                         </p>
                         <p class="description">
-                            <?php _e('Retroactively apply featured images to all existing posts that don\'t have one.', 'auto-post-thumbnail-plus'); ?>
+                            <?php esc_html_e('Retroactively apply featured images to all existing posts that don\'t have one.', 'auto-post-thumbnail-plus'); ?>
                         </p>
                     </div>
                 </details>
@@ -319,9 +319,9 @@ class Auto_Post_Thumbnail_Plus {
         wp_localize_script('aptp-admin', 'aptpAjax', array(
             'ajaxurl' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('aptp_bulk_apply_nonce'),
-            'processing' => __('Processing...', 'auto-post-thumbnail-plus'),
-            'completed' => __('Completed!', 'auto-post-thumbnail-plus'),
-            'error' => __('Error occurred', 'auto-post-thumbnail-plus')
+            'processing' => esc_html__('Processing...', 'auto-post-thumbnail-plus'),
+            'completed' => esc_html__('Completed!', 'auto-post-thumbnail-plus'),
+            'error' => esc_html__('Error occurred', 'auto-post-thumbnail-plus')
         ));
         
         // Enqueue custom admin styles
@@ -530,8 +530,8 @@ class Auto_Post_Thumbnail_Plus {
      */
     private function is_external_url($url) {
         $site_url = site_url();
-        $parsed_site = parse_url($site_url);
-        $parsed_url = parse_url($url);
+        $parsed_site = wp_parse_url($site_url);
+        $parsed_url = wp_parse_url($url);
         
         // If no host in URL, it's relative (not external)
         if (!isset($parsed_url['host'])) {
@@ -604,7 +604,7 @@ class Auto_Post_Thumbnail_Plus {
         
         // Check user permissions
         if (!current_user_can('manage_options')) {
-            wp_send_json_error(array('message' => __('Insufficient permissions', 'auto-post-thumbnail-plus')));
+            wp_send_json_error(array('message' => esc_html__('Insufficient permissions', 'auto-post-thumbnail-plus')));
             return;
         }
         
@@ -617,11 +617,14 @@ class Auto_Post_Thumbnail_Plus {
         ));
         
         // Build query args
+        // Note: meta_query is intentionally used here for bulk processing
+        // This is a manual, one-time operation triggered by admin action
+        // Performance impact is acceptable as it's not run on every page load
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => -1,
             'post_status' => 'publish',
-            'meta_query' => array(
+            'meta_query' => array( // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
                 array(
                     'key' => '_thumbnail_id',
                     'compare' => 'NOT EXISTS'
@@ -681,7 +684,8 @@ class Auto_Post_Thumbnail_Plus {
         
         wp_send_json_success(array(
             'message' => sprintf(
-                __('Processed %d posts: %d successful, %d skipped', 'auto-post-thumbnail-plus'),
+                /* translators: %1$d: number of processed posts, %2$d: number of successful posts, %3$d: number of skipped posts */
+                esc_html__('Processed %d posts: %d successful, %d skipped', 'auto-post-thumbnail-plus'),
                 $processed,
                 $success,
                 $skipped
