@@ -165,19 +165,19 @@ class Auto_Post_Thumbnail_Plus {
             'debug_mode' => false
         ));
         
-        $enabled = isset($settings['enabled']) && $settings['enabled'] ? 'checked' : '';
+        $enabled = isset($settings['enabled']) && $settings['enabled'];
         $mode = isset($settings['mode']) ? $settings['mode'] : 'first_image';
         $image_id = isset($settings['default_image_id']) ? absint($settings['default_image_id']) : 0;
         $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : '';
-        $skip_pages_checked = isset($settings['skip_pages']) && $settings['skip_pages'] ? 'checked' : '';
-        $debug_mode_checked = isset($settings['debug_mode']) && $settings['debug_mode'] ? 'checked' : '';
+        $skip_pages = isset($settings['skip_pages']) && $settings['skip_pages'];
+        $debug_mode = isset($settings['debug_mode']) && $settings['debug_mode'];
         
         ?>
         <div class="aptp-settings-container">
             <!-- Enable checkbox -->
             <p style="margin-top: 0;">
                 <label for="aptp_enabled" style="font-weight: 600;">
-                    <input type="checkbox" name="aptp_settings[enabled]" id="aptp_enabled" value="1" <?php echo $enabled; ?>>
+                    <input type="checkbox" name="aptp_settings[enabled]" id="aptp_enabled" value="1" <?php checked($enabled, true); ?>>
                     <?php esc_html_e('Enable auto-featured-image', 'auto-post-thumbnail-plus'); ?>
                 </label>
             </p>
@@ -236,13 +236,13 @@ class Auto_Post_Thumbnail_Plus {
                     <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #ddd;">
                         <p>
                             <label for="aptp_skip_pages">
-                                <input type="checkbox" name="aptp_settings[skip_pages]" id="aptp_skip_pages" value="1" <?php echo $skip_pages_checked; ?>>
+                                <input type="checkbox" name="aptp_settings[skip_pages]" id="aptp_skip_pages" value="1" <?php checked($skip_pages, true); ?>>
                                 <?php esc_html_e('Skip pages (only apply to blog posts)', 'auto-post-thumbnail-plus'); ?>
                             </label>
                         </p>
                         <p>
                             <label for="aptp_debug_mode">
-                                <input type="checkbox" name="aptp_settings[debug_mode]" id="aptp_debug_mode" value="1" <?php echo $debug_mode_checked; ?>>
+                                <input type="checkbox" name="aptp_settings[debug_mode]" id="aptp_debug_mode" value="1" <?php checked($debug_mode, true); ?>>
                                 <?php esc_html_e('Enable debug logging', 'auto-post-thumbnail-plus'); ?>
                             </label>
                             <br>
@@ -585,7 +585,7 @@ class Auto_Post_Thumbnail_Plus {
         
         // Clean up temp file
         if (is_wp_error($attachment_id)) {
-            @unlink($file_array['tmp_name']);
+            wp_delete_file($file_array['tmp_name']);
             $this->debug_log("Failed to upload external image: {$url}", get_option('aptp_settings', array()));
             return false;
         }
@@ -684,8 +684,8 @@ class Auto_Post_Thumbnail_Plus {
         
         wp_send_json_success(array(
             'message' => sprintf(
-                /* translators: %1$d: number of processed posts, %2$d: number of successful posts, %3$d: number of skipped posts */
-                esc_html__('Processed %d posts: %d successful, %d skipped', 'auto-post-thumbnail-plus'),
+                /* translators: 1: number of processed posts, 2: number of successful posts, 3: number of skipped posts */
+                esc_html__('Processed %1$d posts: %2$d successful, %3$d skipped', 'auto-post-thumbnail-plus'),
                 $processed,
                 $success,
                 $skipped
@@ -707,6 +707,7 @@ class Auto_Post_Thumbnail_Plus {
         // Only log if debug mode is enabled and WP_DEBUG is true
         if (isset($settings['debug_mode']) && $settings['debug_mode'] && defined('WP_DEBUG') && WP_DEBUG) {
             if (defined('WP_DEBUG_LOG') && WP_DEBUG_LOG) {
+                // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log -- Intentional debug logging, only active when user enables debug mode and WP_DEBUG is true
                 error_log('[Auto Post Thumbnail Plus] ' . $message);
             }
         }
