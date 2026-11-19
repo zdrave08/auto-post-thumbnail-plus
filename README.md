@@ -264,13 +264,6 @@ GPL v2 or later - [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.or
 
 ---
 
-## 👨‍💻 Author
-
-**Bitwise Software**  
-GitHub: [@Bitwise-SoftwarePR](https://github.com/Bitwise-SoftwarePR)
-
----
-
 ## 🐛 Support
 
 For help:
@@ -317,4 +310,4 @@ cp -r AutoPostThumbnailPlus /path/to/wordpress/wp-content/plugins/
 
 ---
 
-**Made with ❤️ for the WordPress community by Bitwise Software**
+**Made with ❤️ for the WordPress community**

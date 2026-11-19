@@ -228,10 +228,6 @@ Detailed documentation available on GitHub repository.
 
 This plugin does not collect or transmit any user data. All processing happens locally on your server.
 
-= Credits =
-
-Developed with ❤️ by Bitwise Software
-
 == Keywords for SEO ==
 
 Auto featured image, automatic featured image, first image as featured image, default featured image, missing post thumbnail, fix missing thumbnails, bulk set featured images, auto thumbnail, post thumbnail, featured image generator, automatic thumbnail, set featured image automatically, missing featured image, featured image from content, external image download, import featured images, featured image plugin, thumbnail automation, post image automation, auto set thumbnail, featured image tool, missing image fix, post thumbnail generator, automatic post thumbnail, featured image bulk, social media thumbnail, open graph image, WordPress featured image, auto assign featured image, featured image importer
