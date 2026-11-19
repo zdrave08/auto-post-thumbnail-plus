@@ -1,5 +1,4 @@
 === Auto Post Thumbnail Plus ===
-Contributors: bitwisesoftware
 Tags: featured image, auto thumbnail, first image, default image, post thumbnail
 Requires at least: 6.0
 Tested up to: 7.1
@@ -232,7 +231,6 @@ This plugin does not collect or transmit any user data. All processing happens l
 = Credits =
 
 Developed with ❤️ by Bitwise Software
-Website: https://bitwisesoftware.rs
 
 == Keywords for SEO ==
 

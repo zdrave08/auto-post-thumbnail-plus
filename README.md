@@ -267,7 +267,6 @@ GPL v2 or later - [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.or
 ## 👨‍💻 Author
 
 **Bitwise Software**  
-Website: [bitwisesoftware.rs](https://bitwisesoftware.rs)  
 GitHub: [@Bitwise-SoftwarePR](https://github.com/Bitwise-SoftwarePR)
 
 ---
