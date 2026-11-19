@@ -2,9 +2,9 @@
 
 **Minimal WordPress plugin that automatically sets featured images for posts that don't have one.**
 
-[![WordPress Plugin Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus)
-[![WordPress Compatibility](https://img.shields.io/badge/wordpress-5.0%2B-brightgreen.svg)](https://wordpress.org/)
-[![PHP Version](https://img.shields.io/badge/php-7.2%2B-purple.svg)](https://php.net/)
+[![WordPress Plugin Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus)
+[![WordPress Compatibility](https://img.shields.io/badge/wordpress-6.0%2B-brightgreen.svg)](https://wordpress.org/)
+[![PHP Version](https://img.shields.io/badge/php-8.0%2B-purple.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 ---
@@ -194,8 +194,8 @@ auto-post-thumbnail-plus/
 
 ## 📋 Requirements
 
-- **WordPress:** 5.0 or newer (tested up to 6.8)
-- **PHP:** 7.2 or newer
+- **WordPress:** 6.0 or newer (tested up to 7.1)
+- **PHP:** 8.0 or newer
 - **MySQL:** 5.6 or newer (WordPress standard)
 
 ---
@@ -298,6 +298,11 @@ cp -r AutoPostThumbnailPlus /path/to/wordpress/wp-content/plugins/
 ---
 
 ## 📝 Changelog
+
+### 1.1.0 - 2026-11-19
+- Requires PHP 8.0+ and WordPress 6.0+
+- Tested up to WordPress 7.1
+- Added the full GPLv2 license text
 
 ### 1.0.0 - 2025-11-18
 - 🎉 Initial release

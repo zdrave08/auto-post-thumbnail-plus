@@ -3,13 +3,15 @@
  * Plugin Name: Auto Post Thumbnail Plus
  * Plugin URI: https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus
  * Description: Automatically sets featured images for posts that don't have one - uses first image from content or a default image.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Bitwise Software
  * Author URI: https://bitwisesoftware.rs
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: auto-post-thumbnail-plus
  * Domain Path: /languages
+ * Requires at least: 6.0
+ * Requires PHP: 8.0
  */
 
 // Exit if accessed directly
@@ -18,7 +20,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('APTP_VERSION', '1.0.0');
+define('APTP_VERSION', '1.1.0');
 define('APTP_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('APTP_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('APTP_PLUGIN_BASENAME', plugin_basename(__FILE__));

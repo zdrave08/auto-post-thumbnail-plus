@@ -1,10 +1,10 @@
 === Auto Post Thumbnail Plus ===
 Contributors: bitwisesoftware
 Tags: featured image, auto thumbnail, first image, default image, post thumbnail
-Requires at least: 5.0
-Tested up to: 6.8
-Requires PHP: 7.2
-Stable tag: 1.0.0
+Requires at least: 6.0
+Tested up to: 7.1
+Requires PHP: 8.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -188,6 +188,11 @@ Not yet! This plugin is completely free. We may add premium features in the futu
 
 == Changelog ==
 
+= 1.1.0 - November 19, 2026 =
+* Requires PHP 8.0 or newer (was 7.2) and WordPress 6.0 or newer
+* Tested up to WordPress 7.1
+* Added the full GPLv2 license text (LICENSE)
+
 = 1.0.0 - November 18, 2025 =
 * Initial release
 * Automatic featured image assignment
@@ -201,6 +206,9 @@ Not yet! This plugin is completely free. We may add premium features in the futu
 * PHP 7.2+ support
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Requires PHP 8.0+ and WordPress 6.0+. Check your server's PHP version before updating.
 
 = 1.0.0 =
 Initial release of Auto Post Thumbnail Plus. Install to start automatically setting featured images!
