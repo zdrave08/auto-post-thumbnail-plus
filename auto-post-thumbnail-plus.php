@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Auto Post Thumbnail Plus
- * Plugin URI: https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus
+ * Plugin URI: https://github.com/zdrave08/auto-post-thumbnail-plus
  * Description: Automatically sets featured images for posts that don't have one - uses first image from content or a default image.
  * Version: 1.1.0
- * Author: Bitwise Software
- * Author URI: https://bitwisesoftware.rs
+ * Author: Zdravko Lukic
+ * Author URI: https://github.com/zdrave08
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: auto-post-thumbnail-plus

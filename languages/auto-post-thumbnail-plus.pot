@@ -1,9 +1,9 @@
-# Copyright (C) 2025 Bitwise Software
+# Copyright (C) 2025 Zdravko Lukic
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Auto Post Thumbnail Plus 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/zdrave08/auto-post-thumbnail-plus/issues\n"
 "POT-Creation-Date: 2025-11-18 00:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -109,7 +109,7 @@ msgid "Auto Post Thumbnail Plus"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus"
+msgid "https://github.com/zdrave08/auto-post-thumbnail-plus"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -117,9 +117,9 @@ msgid "Automatically sets featured images for posts that don't have one - uses f
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Bitwise Software"
+msgid "Zdravko Lukic"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://bitwisesoftware.rs"
+msgid "https://github.com/zdrave08"
 msgstr ""
