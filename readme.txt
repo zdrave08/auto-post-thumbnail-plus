@@ -217,7 +217,7 @@ Initial release of Auto Post Thumbnail Plus. Install to start automatically sett
 = Support =
 
 For support, bug reports, or feature requests, please visit:
-* GitHub: https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus
+* GitHub: https://github.com/zdrave08/auto-post-thumbnail-plus
 * WordPress.org Support Forum
 
 = Documentation =
