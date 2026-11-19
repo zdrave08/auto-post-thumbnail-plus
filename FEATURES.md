@@ -141,8 +141,8 @@ Only processes when:
 - ✅ **Safe** - Never overwrites existing thumbnails
 
 ### WordPress Compatibility
-- ✅ WordPress 5.0+
-- ✅ PHP 7.2+
+- ✅ WordPress 6.0+
+- ✅ PHP 8.0+
 - ✅ Standard WordPress functions only
 - ✅ No external dependencies
 
@@ -174,5 +174,5 @@ These features directly increase installation likelihood:
 ---
 
 **Status:** ✅ Production Ready  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Last Updated:** November 18, 2025
