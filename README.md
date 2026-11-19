@@ -2,7 +2,7 @@
 
 **Minimal WordPress plugin that automatically sets featured images for posts that don't have one.**
 
-[![WordPress Plugin Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus)
+[![WordPress Plugin Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/zdrave08/auto-post-thumbnail-plus)
 [![WordPress Compatibility](https://img.shields.io/badge/wordpress-6.0%2B-brightgreen.svg)](https://wordpress.org/)
 [![PHP Version](https://img.shields.io/badge/php-8.0%2B-purple.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -253,7 +253,7 @@ Plugin is translation-ready with `.pot` file included in `languages/` folder.
 
 **Want to translate?**
 - Use [Poedit](https://poedit.net/) to create `.po` file
-- Submit translation via [GitHub](https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus)
+- Submit translation via [GitHub](https://github.com/zdrave08/auto-post-thumbnail-plus)
 - Or via [WordPress.org GlotPress](https://translate.wordpress.org/)
 
 ---
@@ -264,19 +264,11 @@ GPL v2 or later - [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.or
 
 ---
 
-## 👨‍💻 Author
-
-**Bitwise Software**  
-Website: [bitwisesoftware.rs](https://bitwisesoftware.rs)  
-GitHub: [@Bitwise-SoftwarePR](https://github.com/Bitwise-SoftwarePR)
-
----
-
 ## 🐛 Support
 
 For help:
 
-- **GitHub Issues:** [github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus/issues](https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus/issues)
+- **GitHub Issues:** [github.com/zdrave08/auto-post-thumbnail-plus/issues](https://github.com/zdrave08/auto-post-thumbnail-plus/issues)
 - **WordPress.org Support:** [wordpress.org/support/plugin/auto-post-thumbnail-plus/](https://wordpress.org/support/plugin/auto-post-thumbnail-plus/)
 
 ---
@@ -289,10 +281,10 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 ```bash
 # Clone repository
-git clone https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus.git
+git clone https://github.com/zdrave08/auto-post-thumbnail-plus.git
 
 # Install in WordPress
-cp -r AutoPostThumbnailPlus /path/to/wordpress/wp-content/plugins/
+cp -r auto-post-thumbnail-plus /path/to/wordpress/wp-content/plugins/
 ```
 
 ---
@@ -318,4 +310,4 @@ cp -r AutoPostThumbnailPlus /path/to/wordpress/wp-content/plugins/
 
 ---
 
-**Made with ❤️ for the WordPress community by Bitwise Software**
+**Made with ❤️ for the WordPress community**

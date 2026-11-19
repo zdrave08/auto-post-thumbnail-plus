@@ -1,5 +1,4 @@
 === Auto Post Thumbnail Plus ===
-Contributors: bitwisesoftware
 Tags: featured image, auto thumbnail, first image, default image, post thumbnail
 Requires at least: 6.0
 Tested up to: 7.1
@@ -218,7 +217,7 @@ Initial release of Auto Post Thumbnail Plus. Install to start automatically sett
 = Support =
 
 For support, bug reports, or feature requests, please visit:
-* GitHub: https://github.com/Bitwise-SoftwarePR/AutoPostThumbnailPlus
+* GitHub: https://github.com/zdrave08/auto-post-thumbnail-plus
 * WordPress.org Support Forum
 
 = Documentation =
@@ -228,11 +227,6 @@ Detailed documentation available on GitHub repository.
 = Privacy =
 
 This plugin does not collect or transmit any user data. All processing happens locally on your server.
-
-= Credits =
-
-Developed with ❤️ by Bitwise Software
-Website: https://bitwisesoftware.rs
 
 == Keywords for SEO ==
 
